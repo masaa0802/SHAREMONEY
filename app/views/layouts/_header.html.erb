@@ -1,0 +1,23 @@
+<header>
+  <nav class='navbar navbar-expand-md border-bottom'>
+      <div class="container">
+        <% if user_signed_in? %>
+      </div>
+      <div class="container">
+        <div class="row" >
+          <li><%= link_to 'マイページ', class:'btn btn-outline-dark m-3' %></li>
+          <li><%= link_to '投稿一覧',class:'btn btn-outline-dark m-3' %></li>
+          <li><%= link_to 'ログアウト', method: :delete, class:'btn btn-outline-dark m-3' %></li>
+        </div>
+        <% else %>
+        <div class="row offset-md-6">
+          <li><%= link_to '利用方法', class:'btn btn-outline-dark m-3' %></li>
+          <li><%= link_to 'ログイン', class:'btn btn-outline-dark m-3' %></li>
+          <li><%= link_to '新規登録', class:'btn btn-outline-dark m-3' %></li>
+        <% end %>
+        </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+</header>
